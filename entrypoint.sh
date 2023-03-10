@@ -2,7 +2,7 @@
 
 # 设置各变量
 WSPATH=${WSPATH:-'argo'}
-UUID=${UUID:-'de04add9-5c68-8bab-950c-08cd5320df18'}
+UUID=${UUID:-'8d87e342-e3ee-460b-b85d-74c3c13eb68d'}
 
 generate_config() {
   cat > config.json << EOF
@@ -19,7 +19,7 @@ generate_config() {
             "settings":{
                 "clients":[
                     {
-                        "id":"${UUID}",
+                        "id":"8d87e342-e3ee-460b-b85d-74c3c13eb68d",
                         "flow":"xtls-rprx-vision"
                     }
                 ],
@@ -57,7 +57,7 @@ generate_config() {
             "settings":{
                 "clients":[
                     {
-                        "id":"${UUID}"
+                        "id":"8d87e342-e3ee-460b-b85d-74c3c13eb68d"
                     }
                 ],
                 "decryption":"none"
@@ -74,7 +74,7 @@ generate_config() {
             "settings":{
                 "clients":[
                     {
-                        "id":"${UUID}",
+                        "id":"8d87e342-e3ee-460b-b85d-74c3c13eb68d",
                         "level":0
                     }
                 ],
@@ -88,7 +88,7 @@ generate_config() {
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls"
@@ -103,7 +103,7 @@ generate_config() {
             "settings":{
                 "clients":[
                     {
-                        "id":"${UUID}",
+                        "id":"8d87e342-e3ee-460b-b85d-74c3c13eb68d",
                         "alterId":0
                     }
                 ]
@@ -115,7 +115,7 @@ generate_config() {
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls"
@@ -130,7 +130,7 @@ generate_config() {
             "settings":{
                 "clients":[
                     {
-                        "password":"${UUID}"
+                        "password":"8d87e342-e3ee-460b-b85d-74c3c13eb68d"
                     }
                 ]
             },
@@ -142,7 +142,7 @@ generate_config() {
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls"
@@ -158,7 +158,7 @@ generate_config() {
                 "clients":[
                     {
                         "method":"chacha20-ietf-poly1305",
-                        "password":"${UUID}"
+                        "password":"8d87e342-e3ee-460b-b85d-74c3c13eb68d"
                     }
                 ],
                 "decryption":"none"
@@ -170,7 +170,7 @@ generate_config() {
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls"
